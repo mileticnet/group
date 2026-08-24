@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CNPSLab is now GASERI</title>
+
+    <script>
+        window.onload = function () {
+            const currentLocation = window.location.href;
+            if (currentLocation.startsWith('https://group.miletic.net')) {
+                const redirectLocation = currentLocation.replace(
+                    'https://group.miletic.net',
+                    'https://gaseri.org'
+                );
+                document.body.innerHTML = '<p>Please follow <a href="' + redirectLocation + '">this link</a>.</p>';
+                window.location.replace(redirectLocation);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <p>Please follow <a href="https://gaseri.org/">this link</a>.</p>
+</body>
+
+</html>
